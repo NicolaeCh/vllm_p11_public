@@ -116,7 +116,7 @@ echo ""
 echo "Step 5: Pulling vLLM container image..."
 echo "----------------------------------------"
 
-$CONTAINER_CMD pull icr.io/ppc64le-oss/vllm-ppc64le:0.9.1
+$CONTAINER_CMD pull icr.io/ppc64le-oss/vllm-ppc64le:0.10.1.dev852.gee01645db.d20250827
 
 if [ $? -eq 0 ]; then
     echo "✓ Container image pulled successfully"
@@ -124,7 +124,7 @@ else
     echo "✗ Failed to pull container image"
     echo "  This may be due to network issues or registry access"
     echo "  You can retry this step later with:"
-    echo "  $CONTAINER_CMD pull icr.io/ppc64le-oss/vllm-ppc64le:0.9.1"
+    echo "  $CONTAINER_CMD pull icr.io/ppc64le-oss/vllm-ppc64le:0.10.1.dev852.gee01645db.d20250827"
 fi
 
 echo ""
