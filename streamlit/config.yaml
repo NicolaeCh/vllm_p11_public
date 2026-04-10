@@ -1,0 +1,25 @@
+# vLLM Testing Configuration
+project_dir: /home/saytel/vllm-project
+models_dir: /home/saytel/vllm-project/models
+cache_dir: /home/saytel/vllm-project/cache/huggingface
+logs_dir: /home/saytel/vllm-project/logs
+
+# Container settings
+container_name: vllm-test
+container_port: 8000
+host_bind: 0.0.0.0
+
+# Default vLLM parameters
+default_dtype: bfloat16
+default_max_model_len: 4096
+default_max_num_batched_tokens: 4096
+default_max_num_seqs: 8
+
+# CPU settings (adjust based on your system)
+omp_num_threads: 16
+cpu_threads_bind: all
+kvcache_space: 8
+
+# Streamlit settings
+streamlit_port: 8501
+streamlit_host: 0.0.0.0

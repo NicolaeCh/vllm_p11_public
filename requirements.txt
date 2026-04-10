@@ -1,0 +1,18 @@
+# Python dependencies for vLLM Testing Streamlit Application
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+streamlit>=1.32.0
+openai>=1.0.0
+requests>=2.31.0
+pyyaml>=6.0
+
+# Model download and management
+huggingface-hub>=0.20.0
+
+# Utilities
+python-dotenv>=1.0.0
+pandas>=2.0.0
+
+# System monitoring (optional but recommended)
+psutil>=5.9.0
