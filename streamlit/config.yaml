@@ -1,8 +1,8 @@
 # vLLM Testing Configuration
-project_dir: /home/saytel/vllm-project
-models_dir: /home/saytel/vllm-project/models
-cache_dir: /home/saytel/vllm-project/cache/huggingface
-logs_dir: /home/saytel/vllm-project/logs
+project_dir: /home/userllm/vllm-project
+models_dir: /home/userllm/vllm-project/models
+cache_dir: /home/userllm/vllm-project/cache/huggingface
+logs_dir: /home/userllm/vllm-project/logs
 
 # Container settings
 container_name: vllm-test
