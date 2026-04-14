@@ -213,7 +213,7 @@ For production:
 
 ## 12. RESOURCES
 
-- IBM vLLM Documentation: Container manual
+- IBM vLLM Documentation: Container manual from IBM
 - vLLM Official Docs: https://docs.vllm.ai/
 - HuggingFace Hub: https://huggingface.co/models
 - Streamlit Docs: https://docs.streamlit.io/

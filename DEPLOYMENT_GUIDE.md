@@ -189,7 +189,7 @@ cd ~/vllm-project
 **Start with local model:**
 ```bash
 cd ~/vllm-project
-./scripts/vllm_manager.sh start granite-3.3-8b-instruct
+./scripts/vllm_manager.sh start ibm-granite-3.3-8b-instruct
 ```
 
 **Start with HuggingFace model (will download if not cached):**
@@ -199,7 +199,7 @@ cd ~/vllm-project
 
 **Start with custom parameters:**
 ```bash
-./scripts/vllm_manager.sh start granite-3.3-8b-instruct \
+./scripts/vllm_manager.sh start ibm-granite-3.3-8b-instruct \
     --max-model-len 8192 \
     --max-batched-tokens 8192 \
     --omp-threads 32 \
@@ -273,7 +273,7 @@ curl http://127.0.0.1:8000/v1/completions \
 cd ~/vllm-project
 source venv/bin/activate
 
-# Start Streamlit application
+# Start Streamlit application . put 0.0.0.0 to allow remote access
 cd streamlit
 streamlit run vllm_chat.py --server.port 8501 --server.address 127.0.0.1
 ```
