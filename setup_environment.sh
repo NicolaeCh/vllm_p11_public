@@ -19,6 +19,7 @@ CACHE_DIR="$BASE_DIR/cache/huggingface"
 SCRIPTS_DIR="$BASE_DIR/scripts"
 STREAMLIT_DIR="$BASE_DIR/streamlit"
 LOGS_DIR="$BASE_DIR/logs"
+FURY="--prefer-binary --extra-index-url=https://repo.fury.io/mgiessing"
 
 echo "Step 1: Checking system prerequisites..."
 echo "----------------------------------------"
@@ -108,7 +109,7 @@ psutil>=5.9.0
 EOF
 
 pip install --upgrade pip
-pip install -r "$STREAMLIT_DIR/requirements.txt"
+pip install -r "$STREAMLIT_DIR/requirements.txt" $FURY
 
 echo "✓ Python packages installed"
 
